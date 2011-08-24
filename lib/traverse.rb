@@ -1,4 +1,5 @@
 require "traverse/version"
+require "traverse/ext.rb" if RUBY_VERSION =~ /^1\.8/
 require 'nokogiri'
 require 'yajl'
 require 'active_support/inflector'
