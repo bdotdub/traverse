@@ -65,7 +65,7 @@ module Traverse
               child.content.strip
             end
           else
-            define_singleton_method name do 
+            define_singleton_method name do
               XML.new child
             end
           end
@@ -227,7 +227,7 @@ module Traverse
           super
         end
       end
-      
+
       def setup_underlying_json document
         if document.is_a? String
           @json = Yajl::Parser.new.parse document
